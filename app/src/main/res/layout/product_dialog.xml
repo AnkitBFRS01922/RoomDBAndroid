@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minWidth="300dp"
+    android:padding="8dp">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_product_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:labelFor="@id/et_product_name"
+        app:prefixText="Name"/>
+
+    <EditText
+        android:id="@+id/et_product_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:nextFocusForward="@id/et_product_cost"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_product_cost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:labelFor="@id/et_product_cost"
+        app:prefixText="Cost"/>
+
+    <EditText
+        android:id="@+id/et_product_cost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:nextFocusForward="@id/et_product_desc"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_product_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:labelFor="@id/et_product_desc"
+        app:prefixText="Description"/>
+
+    <EditText
+        android:id="@+id/et_product_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/btn_add_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Add Product"/>
+
+</LinearLayout>
